@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #22223b;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.07);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #4f46e5 0%, #2563eb 100%);
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #ef4444 0%, #f87171 100%);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
+}
+
+.btn-secondary {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.btn-secondary:hover {
+  background: #c7d2fe;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

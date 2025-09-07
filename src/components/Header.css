@@ -1,0 +1,254 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1.5px solid #e0e7ff;
+  z-index: 1000;
+  box-shadow: 0 4px 18px 0 rgba(80, 80, 120, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6366f1;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+}
+
+.nav-link.active {
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #60a5fa);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.10);
+}
+
+.user-name {
+  font-weight: 600;
+  color: #3730a3;
+}
+
+.logout-btn {
+  padding: 8px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ef4444 0%, #f87171 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
+} 
+
+/* Profile Menu Styles */
+.profile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  min-width: 280px;
+  z-index: 1000;
+  margin-top: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.profile-menu-header {
+  padding: 20px;
+  border-bottom: 1px solid #e1e5e9;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-menu-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.profile-menu-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-menu-name {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.profile-menu-email {
+  color: #718096;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-menu-item {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.profile-menu-item:hover {
+  background-color: #f7fafc;
+}
+
+.profile-photo-upload {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #4a5568;
+  width: 100%;
+}
+
+.profile-photo-upload span {
+  font-size: 16px;
+}
+
+.profile-menu-divider {
+  height: 1px;
+  background-color: #e1e5e9;
+  margin: 8px 0;
+}
+
+.logout-btn {
+  color: #e53e3e !important;
+}
+
+.logout-btn:hover {
+  background-color: #fed7d7 !important;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  color: #718096;
+  margin-left: 8px;
+  transition: transform 0.2s;
+}
+
+.user-info:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Profile Photo Styles */
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-menu {
+    right: -20px;
+    min-width: 260px;
+  }
+  
+  .profile-menu-header {
+    padding: 15px;
+  }
+  
+  .profile-menu-item {
+    padding: 12px 15px;
+  }
+} 
